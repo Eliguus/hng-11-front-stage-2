@@ -50,7 +50,7 @@ const Footer = () => {
                 </div>
             </div>
         </div>
-        <div className='rounded-tl-[2rem] bg-[#D1D184] border p-6'>
+        <div className='flex justify-center rounded-tl-[2rem] bg-[#D1D184] border p-6'>
             Copyright © @WENDY LUXURY
         </div>
         </>
