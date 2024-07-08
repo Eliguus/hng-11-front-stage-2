@@ -37,28 +37,29 @@ const HomePage = () => {
     return (
         <>
             <div className="flex flex-col items-center">
-                <div className="border-[3px] rounded-full flex items-center justify-between border-[#A3A30F77] w-[30%] h-[2rem] px-2">
+                <div className="border-[3px] rounded-full flex items-center justify-between border-[#A3A30F77] w-full sm:w-3/4 md:w-2/3 lg:w-1/2 xl:w-1/3 2xl:w-1/4 h-10 px-2">
                     <FiSearch className="mr-2"/>
                     <p className="flex-1 text-center">Search for Products</p>
                 </div>
             </div>
             
             <div className="flex flex-col items-center my-8">
-                <div className="relative bg-[#A3A30F77] w-[80%] flex items-center justify-between">
-                    <div className="flex-1 pl-10 flex flex-col justify-center items-center">
-                        <p className="text-4xl">WELCOME TO</p>
-                        <p className="text-6xl">WENDY LUXURY</p>
-                        <p className="text-2xl">(A Style for Every Story)</p>
+                <div className="relative bg-[#A3A30F77] w-full sm:w-[95%] md:w-[90%] lg:w-[80%] xl:w-[80%] flex items-center justify-between px-2 sm:px-4">
+                    <div className="flex-1 flex flex-col justify-center items-center text-center">
+                        <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl">WELCOME TO</p>
+                        <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl">WENDY LUXURY</p>
+                        <p className="text-sm sm:text-md md:text-lg lg:text-xl">(A Style for Every Story)</p>
                     </div>
-                    <img src={WendyFrontModel} alt="Wendy Front Model" className="pr-10" />
-                    <button className="absolute bottom-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white bg-black w-[15%] text-2xl rounded-md">Explore Now</button>
+                    <img src={WendyFrontModel} alt="Wendy Front Model" className="w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/3" />
+                    <button className="absolute bottom-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white bg-black w-3/4 sm:w-1/2 md:w-1/3 lg:w-1/4 text-sm sm:text-md md:text-lg lg:text-xl rounded-md">Explore Now</button>
                 </div>
             </div>
+
             <div className="flex flex-col items-center my-8">
-            <div className="flex flex-row justify-between w-[80%] shadow-[#A3A30F77] shadow-md ">
-                <p className="text-2xl p-4">Featured Categories</p>
-                <button className="bg-[#A3A30F77] text-2xl h-[3rem] p-4 rounded-md">New Products</button>
-            </div>
+                <div className="flex flex-row justify-between items-center w-full sm:w-3/4 md:w-[80%] shadow-[#A3A30F77] shadow-md">
+                    <p className="text-xl sm:text-2xl p-2 sm:p-4">Featured Categories</p>
+                    <button className="bg-[#A3A30F77] text-xl sm:text-2xl sm:p-4 rounded-md">New Products</button>
+                </div>
             </div>
             <div className="flex items-center flex-col">
                 <div className="flex flex-wrap -mx-2 w-[80%]">
@@ -72,18 +73,20 @@ const HomePage = () => {
                 </div>
             </div>
             <div className="flex flex-col items-center my-8">
-                <div className="flex justify-center w-[20%] shadow-[#A3A30F77] shadow-md ">
-                    <p className="text-2xl p-4">Customers&apos; Review</p>
+                <div className="flex justify-center w-full sm:w-3/4 md:w-1/2 lg:w-[30%] xl:w-[20%] shadow-[#A3A30F77] shadow-md">
+                    <p className="text-xl sm:text-2xl p-4">Customers&apos; Review</p>
                 </div>
             </div>
+            <div className="flex flex-col items-center my-8">
             <div className="flex flex-wrap w-[80%]">
                 {
                     comments.map((comment, index) => (
-                        <div key={index} className="flex-1 m-2 p-4 md:w-1/2">
+                        <div key={index} className="w-full sm:w-1/2 p-4 flex-none">
                             <Comments name={comment.name} place={comment.place} comments={comment.comment}/>
                         </div>
                     ))
                 }
+            </div>
             </div>
         </>
     );
