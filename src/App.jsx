@@ -4,13 +4,15 @@ import Footer from './components/Footer'
 import HomePage from './pages/HomePage'
 import ProductsPage from './pages/ProductsPage'
 import CartPage from './pages/CartPage'
+import CheckoutPage from './pages/CheckoutPage'
 function App() {
   return (
     <>
       <Header />
       {/* <HomePage /> */}
       {/* <ProductsPage/> */}
-      <CartPage/>
+      {/* <CartPage/> */}
+      <CheckoutPage />
       <Footer />
     </>
   )
