@@ -1,13 +1,17 @@
 const CartPage = () => {
     return (
         <>
-        <div>
-            <p>Carts</p>
-            <p>Note:</p>
-            <p>Kindly send a DM on instagram for international shipping rates.</p>
-            <p>Delivery within Lagos take 2-3 working days after dispatch.</p>
-            <p>Delivery outside Lagos take 2-5 working days after dispatch.</p>
-            <p>Additionaly, prices are subject to change at any time.</p>
+        <div className="flex flex-col items-center my-8">
+        <div className="w-[80%]">
+            <div className="text-4xl">Carts</div>
+            <div className="text-2xl my-4">Note:</div>
+            <ul className="list-disc list-inside">
+                <li>Kindly send a DM on instagram for international shipping rates.</li>
+                <li>Delivery within Lagos take 2-3 working days after dispatch.</li>
+                <li>Delivery outside Lagos take 2-5 working days after dispatch.</li>
+                <li>Additionally, prices are subject to change at any time.</li>
+            </ul>
+        </div>
         </div>
         <div>
             <div className="flex flex-col items-center my-8">
