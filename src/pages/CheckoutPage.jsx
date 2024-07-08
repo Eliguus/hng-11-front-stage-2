@@ -14,6 +14,16 @@ const CheckoutPage = () => {
                     <p>Returning customer?Click here to login</p>
                 </div>
             </div>
+            <div>
+                <div>
+                    <form>
+                        
+                    </form>
+                </div>
+                <div>
+
+                </div>
+            </div>
 
         </>
     )
