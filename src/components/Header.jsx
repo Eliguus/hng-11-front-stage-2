@@ -22,20 +22,20 @@ const Header = () => {
                     <div onClick={() => setIsMenuOpen(!isMenuOpen)} className={`p-2 text-2xl cursor-pointer ${isMenuOpen&&'border-4 border-[#D1D184]'}`}><FiMenu/></div>
                 
             </div>
-            <div className='flex flex-col items-end'>
-            {isMenuOpen && (
-                <div>
-                    <div className='bg-white flex flex-col items-center '>
-                        <div className='m-2'><Link to="/">Home</Link></div>
-                        <div className='m-2'><Link to="/products">Products</Link></div>
-                        <div className='m-2'><Link to="/cart">Cart</Link></div>
-                        <div className='m-2'><Link to="/checkout">Check Out</Link></div>
-                        <div className='m-2'>My Account</div>
-                        <div className='m-2'>Contact Us</div>
-                    </div>
-                </div>
-                )}
+            <div className='relative flex flex-col items-end'>
+    {isMenuOpen && (
+        <div className='absolute top-0 right-0 z-50'>
+            <div className='bg-white flex flex-col items-center'>
+                <div className='m-2'><Link to="/">Home</Link></div>
+                <div className='m-2'><Link to="/products">Products</Link></div>
+                <div className='m-2'><Link to="/cart">Cart</Link></div>
+                <div className='m-2'><Link to="/checkout">Check Out</Link></div>
+                <div className='m-2'>My Account</div>
+                <div className='m-2'>Contact Us</div>
             </div>
+        </div>
+    )}
+</div>
         
         </>
     );
