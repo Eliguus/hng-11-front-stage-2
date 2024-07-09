@@ -1,3 +1,4 @@
+import paymentCards from '../assets/CheckOutPage/PaymentCards.png'
 const CheckoutPage = () => {
     return (
         <>
@@ -67,7 +68,31 @@ const CheckoutPage = () => {
                     </div>
                     <div className="border border-[#A3A30F77] w-[28%]">
                         <p>Your Order</p>
+                        <div className="flex flex-row">
+                            <div>
+                                <p>Product</p>
+                                <p>Black body hug gown</p>
+                                <p>Female Denim Trousers</p>
+                                <p>Subtotal</p>
+                                <p>Shipping</p>
+                                <p>Total</p>
+                            </div>
+                            <div>
+                                <p>Subtotal</p>
+                                <p>N 20,000</p>
+                                <p>N 20,000</p>
+                                <p>N 40,000</p>
+                                <p>N 5,000</p>
+                                <p>N 85,000</p>
 
+                            </div>
+                        </div>
+                        <p>Debit/Credit Cards</p>
+                        <div>
+                            <img src={paymentCards} alt=""/>
+                            <p>make payment with your debit card</p>
+                            <button>Place Order</button>
+                        </div>
                     </div>
                 </div>
                 </div>
