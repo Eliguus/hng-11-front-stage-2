@@ -1,5 +1,5 @@
 import { FiMapPin, FiMessageSquare, FiPhone } from 'react-icons/fi';
-import wendyLogo from '../assets/wendyLogo.png';
+import wendyLogo from '../assets/logo.png';
 
 const Footer = () => {
     return (
