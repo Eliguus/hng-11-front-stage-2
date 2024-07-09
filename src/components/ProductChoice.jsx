@@ -8,26 +8,26 @@ const ProductChoice = ({product,name1,price1,rating1,img1,name2,price2,rating2,i
                 </div>
             </div>
     <div className="flex">
-        <div className="flex flex-col justify-between bg-[#A3A30F77] m-4 h-full">
+        <div className="flex flex-col justify-between bg-[#A3A30F77] m-4 h-full w-full md:w-[80%]">
             <div>
                 <img src={img1} alt=""/>
                 <p>{name1}</p>
                 <RatingStars rating={rating1}/>
                 <p>{price1}</p>
             </div>
-            <div>
-                <button className="bg-black text-white ml-auto">Add to cart</button>
+            <div className="flex justify-end">
+                <button className="bg-black p-2 text-white ml-auto rounded-md">Add to cart</button>
             </div>
         </div>
-        <div className="flex flex-col justify-between bg-[#A3A30F77] m-4 h-full">
+        <div className="flex flex-col justify-between bg-[#A3A30F77] m-4 h-full w-full md:w-[80%]">
             <div>
                 <img src={img2} alt=""/>
                 <p>{name2}</p>
                 <RatingStars rating={rating2}/>
                 <p>{price2}</p>
             </div>
-            <div>
-                <button className="bg-black text-white ml-auto">Add to cart</button>
+            <div className="flex justify-end">
+                <button className="bg-black p-2 text-white ml-auto rounded-md">Add to cart</button>
             </div>
         </div>
     </div>
