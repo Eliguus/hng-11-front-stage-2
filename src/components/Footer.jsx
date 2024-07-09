@@ -21,7 +21,7 @@ const Footer = () => {
                 </div>
             </div>
             <div>
-                <div className='text-lg m-2'>
+                <div className='text-2xl m-2 font-bold'>
                     Shop
                 </div>
                 <div>
@@ -37,7 +37,7 @@ const Footer = () => {
                 </div>
             </div>
             <div>
-                <div className='text-lg m-2'>
+                <div className='text-2xl m-2 font-bold'>
                     Information
                 </div>
                 <div>
