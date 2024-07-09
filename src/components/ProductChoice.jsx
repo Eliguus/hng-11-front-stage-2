@@ -1,4 +1,5 @@
 import RatingStars from "./RatingStars"
+import { Link } from "react-router-dom"
 const ProductChoice = ({product,name1,price1,rating1,img1,name2,price2,rating2,img2}) =>{
     return (
         <>
@@ -16,7 +17,9 @@ const ProductChoice = ({product,name1,price1,rating1,img1,name2,price2,rating2,i
                 <p className="font-bold p-4">{price1}</p>
             </div>
             <div className="flex justify-end">
+            <Link to="/cart">
                 <button className="bg-black p-2 text-white ml-auto rounded-md m-2">Add to cart</button>
+                </Link>
             </div>
         </div>
         <div className="flex flex-col justify-between bg-[#A3A30F77] m-4 min-h-[300px] md:min-h-[500px] w-full md:w-[80%]">
@@ -27,7 +30,9 @@ const ProductChoice = ({product,name1,price1,rating1,img1,name2,price2,rating2,i
                 <p className="font-bold p-4">{price2}</p>
             </div>
             <div className="flex justify-end">
+                <Link to="/cart">
                 <button className="bg-black p-2 text-white ml-auto rounded-md m-2">Add to cart</button>
+                </Link>
             </div>
         </div>
     </div>
