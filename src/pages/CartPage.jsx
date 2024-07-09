@@ -1,3 +1,5 @@
+import gowns from '../assets/HomePage/GOWNS.png'
+import denim from '../assets/HomePage/DENIMS.png'
 const CartPage = () => {
     return (
         <>
@@ -24,17 +26,17 @@ const CartPage = () => {
             </div>
             <div className="flex flex-col items-center my-8">
                 <div className="flex justify-between w-[80%]">
-                    <p>Product</p>
-                    <p>Quantity</p>
-                    <p>Price</p>
+                    <img src={gowns} alt='gowns'/>
+                    <p>x2</p>
+                    <p>N 20,000</p>
                     <p>Subtotal</p>
                 </div>
             </div>
             <div className="flex flex-col items-center my-8">
                 <div className="flex justify-between w-[80%]">
-                    <p>Product</p>
-                    <p>Quantity</p>
-                    <p>Price</p>
+                    <img src={denim} alt='denim'/>
+                    <p>x2</p>
+                    <p>N 20,000</p>
                     <p>Subtotal</p>
                 </div>
             </div>
