@@ -1,5 +1,6 @@
 import gowns from '../assets/HomePage/GOWNS.png'
 import denim from '../assets/HomePage/DENIMS.png'
+import { Link } from 'react-router-dom';
 const CartPage = () => {
     return (
         <>
@@ -71,9 +72,11 @@ const CartPage = () => {
             </div>
         </div>
         <div className='flex justify-end'> 
+            <Link to='/checkout'>
             <p className='bg-[#A3A30F77] p-4'>
             Proceed to Checkout
             </p>
+            </Link>
         </div>
     </div>
 </div>
