@@ -18,10 +18,10 @@ const CartPage = () => {
         <div>
             <div className="flex flex-col items-center my-8">
                 <div className="flex justify-between w-[80%] shadow-[#A3A30F77] shadow-md ">
-                    <p>Product</p>
-                    <p>Quantity</p>
-                    <p>Price</p>
-                    <p>Subtotal</p>
+                    <p className='py-4'>Product</p>
+                    <p className='py-4'>Quantity</p>
+                    <p className='py-4'>Price</p>
+                    <p className='py-4'>Subtotal</p>
                 </div>
             </div>
             <div className="flex flex-col items-center my-8">
