@@ -56,7 +56,7 @@ const ProductsPage = ()=>{
                         <p className="text-xl mb-4">T-SHIRTS</p>
                     </div>
                     <div className="w-full md:w-2/3 flex flex-col order-first md:order-none">
-                        <p className="text-2xl">Products</p>
+                        <p className="text-2xl font-bold">Products</p>
                         <div>
                             {
                                 data.map((detail,index) => (
