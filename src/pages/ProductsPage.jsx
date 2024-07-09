@@ -3,6 +3,8 @@ import DENIMS from "../assets/HomePage/DENIMS.png"
 import sneakers from "../assets/HomePage/SNEAKERS.png"
 import gowns from '../assets/HomePage/GOWNS.png'
 import gowns2 from '../assets/HomePage/WendyFrontModel.png'
+import { MdOutlineShoppingCart, MdOutlinePayments, MdLocalShipping } from 'react-icons/md';
+import { IoPerson } from 'react-icons/io5';
 import jeans from '../assets/ProductPage/JEANS.png'
 
 const ProductsPage = ()=>{
@@ -73,6 +75,24 @@ const ProductsPage = ()=>{
                 </div>
             </div>
         </div>
+        <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-4">
+                <div className="flex flex-col items-center">
+                    <MdOutlineShoppingCart size={24}/>
+                    <p>Easy Shopping</p>
+                </div>
+                <div className="flex flex-col items-center">
+                    <MdOutlinePayments size={24}/>
+                    <p>Secure Payment</p>
+                </div>
+                <div className="flex flex-col items-center">
+                    <MdLocalShipping size={24}/>
+                    <p>Swift Delivery</p>
+                </div>
+                <div className="flex flex-col items-center">
+                    <IoPerson size={24}/>
+                    <p>24/7 Support</p>
+                </div>
+            </div>
         </>
     )
 }

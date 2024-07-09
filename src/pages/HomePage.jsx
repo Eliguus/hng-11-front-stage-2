@@ -6,11 +6,13 @@ import CARGOPANTS from "../assets/HomePage/CARGO PANTS.png"
 import JEWELRIES from "../assets/HomePage/JEWELRIES.png"
 import SNEAKERS from "../assets/HomePage/SNEAKERS.png"
 import TSHIRTS from "../assets/HomePage/T-SHIRTS.png"
-
+import { MdOutlineShoppingCart,MdOutlinePayments } from "react-icons/md";
+import { CiDeliveryTruck } from "react-icons/ci";
+import { IoPerson } from "react-icons/io5";
 import Product from "../components/Product";
 import Comments from "../components/Comments";
 const HomePage = () => {
-    const data = [DENIMS,GOWNS,CARGOPANTS,JEWELRIES,SNEAKERS,TSHIRTS]
+    const data = [{img:DENIMS,name:'DENIMS'},{img:GOWNS,name:'GOWNS'},{img:CARGOPANTS,name:'CARGOPANTS'},{img:JEWELRIES,name:'JEWELRIES'},{img:SNEAKERS,name:'SNEAKERS'},{img:TSHIRTS,name:"TSHIRTS"}]
     const comments = [
         {
             name: "Ijeoma Juliet",
@@ -66,7 +68,7 @@ const HomePage = () => {
                     {
                         data.map((img, index) => (
                             <div key={index} className="w-full sm:w-1/2 md:w-1/3 px-2">
-                                <Product img={img} productName={decodeURIComponent(img.split('/').pop().split('.')[0])}/>
+                                <Product img={img.img} productName={img.name}/>
                             </div>
                         ))
                     }
@@ -87,6 +89,24 @@ const HomePage = () => {
                     ))
                 }
             </div>
+            </div>
+            <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-4">
+                <div className="flex flex-col items-center">
+                    <MdOutlineShoppingCart size={24}/>
+                    <p>Easy Shopping</p>
+                </div>
+                <div className="flex flex-col items-center">
+                    <MdOutlinePayments size={24}/>
+                    <p>Secure Payment</p>
+                </div>
+                <div className="flex flex-col items-center">
+                    <CiDeliveryTruck size={24}/>
+                    <p>Swift Delivery</p>
+                </div>
+                <div className="flex flex-col items-center">
+                    <IoPerson size={24}/>
+                    <p>24/7 Support</p>
+                </div>
             </div>
         </>
     );
