@@ -1,22 +1,17 @@
-import { FiStar } from 'react-icons/fi';
-
+import { FaStar } from 'react-icons/fa';
 const RatingStars = ({ rating }) => {
   const totalStars = 5;
   const fullStars = Math.floor(rating);
-  const halfStars = rating % 1 >= 0.5 ? 1 : 0;
-  const emptyStars = totalStars - fullStars - halfStars;
-
+  const emptyStars = totalStars - fullStars;
   return (
     <div className="flex">
       {[...Array(fullStars)].map((_, index) => (
-        <FiStar key={`full-${index}`} className="text-yellow-500" />
+        <FaStar key={`full-${index}`} color='yellow' />
       ))}
-      {halfStars > 0 && (
-        <FiStar key="half" className="text-yellow-500" style={{ clipPath: 'polygon(0 0, 50% 0, 50% 100%, 0 100%)' }} />
-      )}
       {[...Array(emptyStars)].map((_, index) => (
-        <FiStar key={`empty-${index}`} className="text-gray-300" />
+        <FaStar key={`empty-${index}`} color='white' />
       ))}
+      
     </div>
   );
 };

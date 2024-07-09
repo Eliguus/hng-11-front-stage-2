@@ -3,8 +3,8 @@ const ProductChoice = ({product,name1,price1,rating1,img1,name2,price2,rating2,i
     return (
         <>
         <div className="flex flex-col items-center my-8">
-                <div className="flex flex-row justify-between items-center w-full sm:w-3/4 md:w-[80%] shadow-[#A3A30F77] shadow-md">
-                    <p className="text-xl sm:text-2xl p-2 sm:p-4">{product}</p>
+                <div className="flex flex-row justify-between items-center w-full sm:w-3/4 md:w-[100%] shadow-[#A3A30F77] shadow-md">
+                    <p className="text-xl sm:text-2xl p-2 sm:p-4 bg-[#A3A30F77]">{product}</p>
                 </div>
             </div>
     <div className="flex">
